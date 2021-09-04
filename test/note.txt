@@ -1,0 +1,19 @@
+
+<----this is for the gradient code--->
+background: #fc00ff;  
+background: -webkit-linear-gradient(to right, #00dbde, #fc00ff);  
+background: linear-gradient(to right, #00dbde, #fc00ff); 
+
+
+
+
+<--------this for our font which is barcode with texr*------>
+@font-face {
+    src: url(font/barcodeFont.ttf);
+    font-family: barFont;
+}
+
+
+<-------this for the second font by google------>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
+font-family: 'Noto Sans KR', sans-serif;
