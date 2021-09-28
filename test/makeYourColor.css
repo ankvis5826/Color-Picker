@@ -1,0 +1,361 @@
+/*this for our font which is barcode with texr*/
+@font-face {
+    src: url(font/barcodeFont.ttf);
+    font-family: barFont;
+}
+
+/*basic code for all html*/
+*{
+    box-sizing: border-box;
+}
+html{
+    margin: 0px;
+    padding: 0px;
+    font-size: 62.5%;
+}
+
+/*this is for the navar*/
+
+.navbar{
+    background: #fc00ff;
+    background: linear-gradient(to right, #00dbde, #fc00ff);
+    font-family: barfont;
+    padding: 0px;
+}
+.navbar .linkBox
+{
+    margin: 0px ;
+    padding: 0px;
+}
+.navbar .allLinks{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+   
+}
+.navbar .nav-item a{
+  color: rgb(255, 255, 255);
+  font-size: 4.7rem;
+
+}
+.navbar .nav-item .active{
+ color: black;
+    
+  }
+.navbar .navbar-toggler img{ 
+    width: 3.8rem;
+    color: white;
+    font-size: 50px;    
+}
+
+/*this is for the color box of make your color*/
+#ColorBoxMYC{
+    width: 100%;
+    height: auto;
+    display: flex;
+  justify-content: center;
+  z-index: 10;
+}
+#ColorBoxMYC .colorBoxMYC{
+    width: 80%;
+    height: 55vh;
+    background-color: red;
+    border-radius:0px 0px  15px 15px;
+}
+
+/*this is for color code section of MYC*/
+
+#ColorCodeMYC .colorCodeMYC{
+    width: 100%;
+    background: #fc00ff;  
+    background: linear-gradient(to left, #00dbde, #fc00ff);
+    padding: 90px 20px 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    margin-top: -65px;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: white;
+
+}
+#ColorCodeMYC .colorCodeMYC .inOut{
+  padding: 10px 20px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  
+} 
+#ColorCodeMYC .colorCodeMYC .inputControl{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}#ColorCodeMYC .colorCodeMYC .inputControl  span{
+    font-size: 2.5rem;
+    margin: 0px 10px;
+}
+#ColorCodeMYC .colorCodeMYC .inputControl input[type=range]{
+    width: 60%;
+    margin: 0px 10px;
+}
+#ColorCodeMYC .colorCodeMYC .inputControl input[type=number]{
+    margin: 0px 10px;
+    font-size: 2rem;
+    border: none;
+     width:65px;
+     text-align: center;
+     border-radius: 3px;
+}
+
+#ColorCodeMYC .colorCodeMYC  .output h3{
+    font-size: 2.3rem;
+    margin: 7px 0px;
+    font-weight: 700;
+    user-select: all;
+}
+/*this is for the text editor section*/
+#ide .ideRow{
+    width: 100%;
+}
+#ide .ideRow .ideCol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ide .main{
+    width: 450px;
+    height: 350px;
+    color: white;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.4rem;
+    margin-top: 60px;
+}
+#ide .inTop{
+    display: flex;
+}
+#ide .inTop .one{
+    width: 20%;
+    height: 50px;
+    background-color: rgb(31, 29, 29);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 0px 0px 0px;
+}
+
+#ide .inTop .two{
+    width: 80%;
+    height: 50px;
+    background-color: rgb(56, 53, 53);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 0px 10px 0px 0px;
+
+}
+#ide .inTop .two ul{
+   display: flex;
+   list-style-type:none; 
+   margin-left: -40px;
+}
+#ide .inTop .two ul li{
+    margin: 0px 15px;
+}
+#ide .inBottom{
+    display: flex;
+}
+#ide .inBottom .three{
+    width: 20%;
+    height: 300px;
+    background-color:rgb(31, 29, 29);
+    padding: 1.5rem .8rem;
+    border-radius: 00px 0px 0px 10px;
+    font-size:1.4rem ;
+
+}
+#ide .inBottom .four{
+    width: 80%;
+    height: 300px;
+    background-color: rgb(0, 0, 0);
+    padding: 20px 15px;
+    user-select: all;
+    font-size: 1.8rem;
+    border-radius: 0px 0px 10px 0px;
+
+}
+#ide .ideCol .info{
+    padding: 20px;
+   font-family: 'Noto Sans KR', sans-serif;
+}
+#ide .ideCol .info h4{
+    font-size: 4rem;
+    font-weight: 700;
+}
+#ide .ideCol .info p{
+    font-size: 1.7rem;
+    font-style: italic;
+    color: rgb(53, 49, 49);
+}
+
+
+/*this is for color code section*/
+#ColorCodeSecMYC{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#ColorCodeSecMYC .colorCodes {
+    width: 80%;
+    padding: 10px;
+    background: linear-gradient(to left, #00dbde, #fc00ff);
+    border-radius:20px;
+   margin-top: -25px;
+}
+#ColorCodeSecMYC .colorCodes .colorCodeItem {
+   color: white;
+   font-family: 'Noto Sans KR', sans-serif;
+   font-size: 2.5rem;
+   text-align: center;
+   user-select: all;
+} 
+#ColorCodeSecMYC .colorCodes .colorCodeItem span:hover{
+    transition: all .5s;
+   font-weight: 700;
+}
+
+/*this is for the color shades option*/
+#ColorShadeSecMYC .colorShadeBox{
+  height: 400px;
+  margin-top: 70px;
+  height: auto;
+
+}
+#ColorShadeSecMYC .colorShadeBox .shade{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#ColorShadeSecMYC .colorShadeBox .shade .colorShadeItem{
+  width: 30%;
+  height: 5rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: all;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 3px;
+}
+#ColorShadeSecMYC .colorShadeBox .shade .colorBox{
+    background-color: red;
+}
+#ColorShadeSecMYC .colorShadeBox .shade .codeBox{
+  border: solid 1.5px black;
+}
+
+/*this is for the color shades optionthis is for the footer*/
+#Footer {
+    margin-top: 60px;
+}
+#Footer .footerBox{
+    width: 100%;
+    margin: 0px;
+    padding: 20px;
+    background:  linear-gradient(to right, #00dbde, #fc00ff); 
+    color: white;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#Footer .footerBox .text,#Footer .footerBox .links {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+}
+#Footer .footerBox .text h2{
+    font-size: 3rem;
+    font-weight: 700;
+}
+#Footer .footerBox .text p{
+    font-size: 1.4rem;
+    font-weight: 300;
+    font-style: italic;
+    text-align: justify;
+    letter-spacing: .5px;
+    word-spacing: 1.5px;
+   
+}
+
+#Footer .footerBox .links h2{
+    font-size: 3rem;
+    font-weight: 700;
+
+}
+#Footer .footerBox .links li {
+     font-size: 1.5rem;
+     list-style-type: none;
+     margin-left: -35px;
+     line-height: 25px;
+ }
+#Footer .footerBox .links li a{
+   color: white;
+}
+#Footer .footerBox .qr img{
+    width: 130px;
+}
+
+#Footer .footerBox .qr{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/*for end footer*/
+#CreditSec .credit{
+    padding: 5px;
+    background:  linear-gradient(to right, #00dbde, #fc00ff); 
+     color: white;
+     text-align: center;
+     font-size: 1rem;
+     font-weight:200;
+     border-top: solid 0.5px white;
+}
+
+
+/*this is for the responsiv code*/
+@media only screen and (max-width:1300px) {
+   
+    html{
+        font-size: 55%;
+    }
+    #Footer .footerBox .qr img{
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width:950px) {
+
+    .navbar .nav-item a{
+        
+        font-size: 4rem;
+      
+      }
+    #ColorShadeSecMYC .colorShadeBox .shade .codeBox{
+        font-size: 1.6rem;
+      }
+}
+@media only screen and (max-width:400px) {
+  
+   
+    #ColorShadeSecMYC  .colorShadeBox .shade .codeBox{
+        font-size: 1.2rem;
+      }
+      #Footer .footerBox .qr img{
+        width: 80px;
+    }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .main{
+            width: 450px;
+            height: 350px;
+            color: white;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .inTop{
+            display: flex;
+        }
+        .inTop .one{
+            width: 20%;
+            height: 50px;
+            background-color: rgb(31, 29, 29);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .inTop .two{
+            width: 80%;
+            height: 50px;
+            background-color: rgb(56, 53, 53);
+        }
+        .inTop .two ul{
+           display: flex;
+           list-style-type:none ; 
+           margin-left: -40px;
+        }
+        .inTop .two ul li{
+            margin: 0px 15px;
+        }
+        .inBottom{
+            display: flex;
+        }
+        .inBottom .three{
+            width: 20%;
+            height: 300px;
+            background-color:rgb(31, 29, 29);
+            padding: 15px 12px;
+        }
+        .inBottom .four{
+            width: 80%;
+            height: 300px;
+            background-color: rgb(0, 0, 0);
+            padding: 20px 15px;
+            user-select: all;
+        }
+    </style>
+</head>
+<body>
+   <div class="main">
+       <div class="inTop">
+          <div class="one">Text</div>
+          <div class="two">
+              <ul>
+                  <li>Text</li>
+                  <li>Background</li>
+                  <li>Download</li>
+              </ul>
+          </div>
+       </div>
+       <div class="inBottom">
+           <div class="three"> code.css </div>
+           <div class="four"><span> rgb(12,33,121) </span></div>
+       </div>
+   </div>
+</body>
+</html><div class="side"></div>
+<div class="top"></div>

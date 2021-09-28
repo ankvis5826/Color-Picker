@@ -17,3 +17,6 @@ background: linear-gradient(to right, #00dbde, #fc00ff);
 <-------this for the second font by google------>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
 font-family: 'Noto Sans KR', sans-serif;
+
+<-----------this is our git-hub color plate link-------------->
+https://github.com/Simonwep/pickr
