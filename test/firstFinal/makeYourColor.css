@@ -7,6 +7,7 @@
 /*basic code for all html*/
 *{
     box-sizing: border-box;
+    
 }
 html{
     margin: 0px;
@@ -117,16 +118,16 @@ html{
     user-select: all;
 }
 /*this is for the text editor section*/
-#ide .ideRow{
+#ideMYC .ideRow{
     width: 100%;
 }
-#ide .ideRow .ideCol{
+#ideMYC .ideRow .ideCol{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#ide .main{
+#ideMYC .main{
     width: 450px;
     height: 350px;
     color: white;
@@ -134,10 +135,10 @@ html{
     font-size: 1.4rem;
     margin-top: 60px;
 }
-#ide .inTop{
+#ideMYC .inTop{
     display: flex;
 }
-#ide .inTop .one{
+#ideMYC .inTop .one{
     width: 20%;
     height: 50px;
     background-color: rgb(31, 29, 29);
@@ -147,7 +148,7 @@ html{
     border-radius: 10px 0px 0px 0px;
 }
 
-#ide .inTop .two{
+#ideMYC .inTop .two{
     width: 80%;
     height: 50px;
     background-color: rgb(56, 53, 53);
@@ -157,18 +158,23 @@ html{
     border-radius: 0px 10px 0px 0px;
 
 }
-#ide .inTop .two ul{
+#ideMYC .inTop .two ul{
    display: flex;
    list-style-type:none; 
    margin-left: -40px;
+   cursor: pointer;
 }
-#ide .inTop .two ul li{
+#ideMYC .inTop .two ul li{
     margin: 0px 15px;
 }
-#ide .inBottom{
+#ideMYC .inTop .two ul li:hover{
+    transition: all .5s;
+    text-decoration: underline;
+}
+#ideMYC .inBottom{
     display: flex;
 }
-#ide .inBottom .three{
+#ideMYC .inBottom .three{
     width: 20%;
     height: 300px;
     background-color:rgb(31, 29, 29);
@@ -177,7 +183,7 @@ html{
     font-size:1.4rem ;
 
 }
-#ide .inBottom .four{
+#ideMYC .inBottom .four{
     width: 80%;
     height: 300px;
     background-color: rgb(0, 0, 0);
@@ -187,15 +193,15 @@ html{
     border-radius: 0px 0px 10px 0px;
 
 }
-#ide .ideCol .info{
+#ideMYC .ideCol .info{
     padding: 20px;
    font-family: 'Noto Sans KR', sans-serif;
 }
-#ide .ideCol .info h4{
+#ideMYC .ideCol .info h4{
     font-size: 4rem;
     font-weight: 700;
 }
-#ide .ideCol .info p{
+#ideMYC .ideCol .info p{
     font-size: 1.7rem;
     font-style: italic;
     color: rgb(53, 49, 49);
@@ -254,8 +260,11 @@ html{
   font-weight: 600;
   padding: 3px;
 }
-#ColorShadeSecMYC .colorShadeBox .shade .colorBox{
-    background-color: red;
+#ColorShadeSecMYC .colorShadeBox .shade .colorBox:hover{
+    transition: all .5s;
+    transform: scale(1.3);
+   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  
 }
 #ColorShadeSecMYC .colorShadeBox .shade .codeBox{
   border: solid 1.5px black;
