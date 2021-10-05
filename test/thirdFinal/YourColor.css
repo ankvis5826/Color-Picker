@@ -1,0 +1,294 @@
+/*this for our font which is barcode with texr*/
+@font-face {
+    src: url(font/barcodeFont.ttf);
+    font-family: barFont;
+}
+
+/*basic code for all html*/
+*{
+    box-sizing: border-box;
+}
+html{
+    margin: 0px;
+    padding: 0px;
+    font-size: 62.5%;
+}
+body{
+    background-color:rgb(226, 226, 226) ;
+
+}
+
+/*this is for the navar*/
+
+.navbar{
+    background: #fc00ff;
+    background: linear-gradient(to right, #00dbde, #fc00ff);
+    font-family: barfont;
+    padding: 0px;
+}
+.navbar .linkBox
+{
+    margin: 0px ;
+    padding: 0px;
+}
+.navbar .allLinks{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+   
+}
+.navbar .nav-item a{
+  color: rgb(255, 255, 255);
+  font-size: 4.7rem;
+
+}
+.navbar .nav-item .active{
+ color: black;
+    
+  }
+.navbar .navbar-toggler img{ 
+    width: 3.8rem;
+    color: white;
+    font-size: 50px;    
+}
+
+/*this is for filterYC Btn section*/
+#filterYC{
+   width: 100%;
+   height: auto;
+
+}
+#filterYC .filterBox{
+   width: 100%;
+  height: auto;
+  padding: 15px 0px;
+  box-shadow: 4px 5px 13px 0px rgba(8, 8, 8, 0.25);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+} 
+#filterYC .filterBox .filterBtn{
+   display: inline-block;
+   padding: .6rem 3rem;
+   background: #fc00ff;  
+   background: linear-gradient(to right, #00dbde, #fc00ff); 
+   color: white;
+   font-family:'Noto Sans KR', sans-serif;
+   font-size: 1.7rem;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+/*this is for color sampal Box*/
+#sampalColorYC{
+margin-top: 50px;
+}
+#sampalColorYC .sampalContainer{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%; 
+    column-gap: 5%;
+    font-size: 2rem;
+}
+#sampalColorYC .sampalColorBox{
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+#sampalColorYC .sampalColorBox:hover{
+    transition: all .5s;
+   transform: scale(2);
+   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+}
+#sampalColorYC .sampalColorBox .color{
+    width: 100%;
+    height: 155px;
+    background-color: burlywood;
+    border-radius: 20px 20px 0px 0px;
+}
+#sampalColorYC .sampalColorBox .code{
+    width: 100%;
+    height: 45px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 0px 20px 20px;
+    font-weight: 600;
+    user-select: all;
+    cursor: pointer;
+
+}
+#sampalColorYC .sampalColorBox .code:hover{
+    transition: all .5s;
+    font-weight: 700;
+}
+/*this is for the text info section*/
+#textInfo{
+    
+    margin-top: 50px;
+}
+
+#textInfo .textInfoBox .textInfoHead{
+      font-family:  'Noto Sans KR', sans-serif;
+      font-size: 4.5rem;
+      font-weight: 700;
+      text-align: center;
+}
+#textInfo .textInfoBox .row{
+    width: 100%;
+    padding: 1rem 6rem;
+}
+
+#textInfo .textInfoBox  .cols p{
+    font-family:  'Noto Sans KR', sans-serif;
+    font-size: 1.6rem;
+    font-style: italic;
+    text-align: justify;
+    padding: 20px .5px;
+    color: rgb(29, 28, 28);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*this is for footer */
+#Footer {
+    margin-top: 60px;
+}
+#Footer .footerBox{
+    width: 100%;
+    margin: 0px;
+    padding: 20px;
+    background:  linear-gradient(to right, #00dbde, #fc00ff); 
+    color: white;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#Footer .footerBox .text,#Footer .footerBox .links {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+}
+#Footer .footerBox .text h2{
+    font-size: 3rem;
+    font-weight: 700;
+}
+#Footer .footerBox .text p{
+    font-size: 1.4rem;
+    font-weight: 300;
+    font-style: italic;
+    text-align: justify;
+    letter-spacing: .5px;
+    word-spacing: 1.5px;
+   
+}
+
+#Footer .footerBox .links h2{
+    font-size: 3rem;
+    font-weight: 700;
+
+}
+#Footer .footerBox .links li {
+     font-size: 1.5rem;
+     list-style-type: none;
+     margin-left: -35px;
+     line-height: 25px;
+ }
+#Footer .footerBox .links li a{
+   color: white;
+}
+#Footer .footerBox .qr img{
+    width: 130px;
+}
+
+#Footer .footerBox .qr{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/*for end footer*/
+#CreditSec .credit{
+    padding: 5px;
+    background:  linear-gradient(to right, #00dbde, #fc00ff); 
+     color: white;
+     text-align: center;
+     font-size: 1rem;
+     font-weight:200;
+     border-top: solid 0.5px white;
+}
+
+
+/*this is for the responsiv code*/
+@media only screen and (max-width:1300px) {
+    
+    html{
+        font-size: 55%;
+    }
+    
+    #Footer .footerBox .qr img{
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+   
+    .navbar .nav-item a{
+        
+        font-size: 4rem;
+      
+      }
+    #ColorShadeSec .colorShadeBox .shade .codeBox{
+        font-size: 1.6rem;
+      }
+      #sampalColorYC .sampalContainer{
+        grid-template-columns: 30% 30% 30%; 
+        column-gap: 4%;
+        
+    
+        }
+}
+@media only screen and (max-width:400px) {
+  
+   
+    #sampalColorYC .sampalContainer{
+        grid-template-columns: 45% 45%; 
+      column-gap: 5%;
+        
+    
+
+    }
+    #ColorShadeSec .colorShadeBox .shade .codeBox{
+        font-size: 1.2rem;
+      }
+      #Footer .footerBox .qr img{
+        width: 80px;
+    }
+}
+
+@media only screen and (max-width:350px) {
+    html{
+        font-size: 40%;
+    }
+   
+    #sampalColorYC .sampalContainer{
+        grid-template-columns: 90%; 
+    }
+}
+/*this is for the responsive for color sampal section*/
