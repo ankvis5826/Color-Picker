@@ -48,8 +48,6 @@ export class makeColorShade {
         const pluse = 15;
         for (let i = 0; i < 8; i++) {
             if ((R >=240) & (G >= 240) & (B >= 240)) {
-              
-
                 return lightShadeArray;
                 
             }
@@ -86,38 +84,9 @@ export class makeColorShade {
             lightShadeArray[i] = { "r": R, "g": G, "b": B };
 
         }
-        
+       
         return lightShadeArray;
         
 
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
