@@ -1,6 +1,6 @@
-import { makeColorShade } from './makeShade.js';
-import { randomColor } from './randamColor.js';
+import { randomColor } from './randomColorCode.js';
 import { rgbHex } from './rgbToHex.js';
+import { getShade } from './shade.js';
 
 //"MYC" stand for makeYourColor page 
 
@@ -113,71 +113,6 @@ MYCideTopBtn[1].addEventListener('click', () => {
     MYCideWrite.innerHTML = "background-color:" + MYCrgbCode.innerHTML + ";"
 });
 
-
-// //this is for color shade
-let shade = new makeColorShade();
-function getShade(r, g, b) {
-    let dark = shade.makeDrak(r, g, b);
-
-    let light = shade.makelight(r, g, b);
-   
-    let allShades = [];
-    for (let i = 0; i < light.length; i++) {
-        allShades[i] = light[light.length -1 - i ];
-
-    }
-
-    for (let i = 0; i < dark.length; i++) {
-        allShades[light.length + i] = dark[i];
-    }
-   
-    updateShadeUI(allShades);
-    
-}
-
-function updateShadeUI(shades) {
-    let shadeDiv = document.querySelector('#ColorShadeSecMYC .colorShadeBox');
-    shadeDiv.innerHTML =""; 
-    for (let i = 0; i < shades.length; i++) {
-        //geting color value 
-        let r = shades[i].r;
-        let g = shades[i].g;
-        let b = shades[i].b;
-        
-        //this is for the hex code
-        let hexCode = "#";
-        let check = Number(r).toString(16);
-        if (check <= 0) {
-            hexCode += "00";
-        }
-        else {
-            hexCode += check;
-        }
-        check = Number(g).toString(16);
-        if (check <= 0) {
-            hexCode += "00";
-        }
-        else {
-            hexCode += check;
-        }
-        check = Number(b).toString(16);
-        if (check <= 0) {
-            hexCode += "00";
-        }
-        else {
-            hexCode += check;
-        }
-      
-        let sigleShade = ` <div class="shade">
-        <div class="shadeColor colorShadeItem colorBox" style="background-color:rgb(${r}, ${g}, ${b});"></div>
-        <div class="rgbCode colorShadeItem codeBox">rgb(${r}, ${g}, ${b})</div>
-        <div class="hexCode colorShadeItem codeBox">${hexCode}</div>
-      </div>`
-
-        shadeDiv.innerHTML += sigleShade;
-    }
-
-}
 
 getShade(R,G,B);
 

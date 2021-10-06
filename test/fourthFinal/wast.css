@@ -1,0 +1,74 @@
+@media only screen and (max-width:1300px) {
+   
+    html{
+        font-size: 55%;
+    }
+    #Footer .footerBox .qr img{
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+   /*this is common for all page*/
+   .navbar .nav-item a{
+    font-size: 4rem;
+    } 
+    /*this is for the color plate your color*/
+    #sampalColorYC .sampalContainer{
+        grid-template-columns: 30% 30% 30%; 
+        column-gap: 4%;
+    }
+
+
+}
+
+@media only screen and (max-width:880px) {
+    /*all for color plate page*/
+    #colorPlateGit{
+        font-size: 12px;
+    }
+    #converter .converterBox .inOut .codes .two{
+        margin: 0px 30px;
+    }
+}
+
+@media only screen and (max-width:680px) {
+    
+    #sampalColorYC .sampalContainer{
+        grid-template-columns: 45% 45%; 
+      column-gap: 5%;
+
+    }
+      /*all for color plate page*/
+    #converter .converterBox .inOut .codes input{
+        width: 150px;
+        font-size: 1.8rem;
+    }
+    #colorPlateGit{
+        font-size: 9px;
+    }
+    #converter .converterBox .inOut .codes .two{
+        margin: 0px 20px;
+    }
+}
+
+@media only screen and (max-width:400px) {
+  
+      #Footer .footerBox .qr img{
+        width: 80px;
+    }
+    #ColorCodeSecRC .colorCodes .colorCodeItem{
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width:350px) {
+    html{
+        font-size: 40%;
+    }
+   
+    #sampalColorYC .sampalContainer{
+        grid-template-columns: 90%; 
+    }
+}
+

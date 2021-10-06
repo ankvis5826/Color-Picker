@@ -1,0 +1,264 @@
+/* */
+@font-face {
+    src: url(font/barcodeFont.ttf);
+    font-family: barFont;
+}
+
+/*basic code for all html*/
+*{
+    box-sizing: border-box;
+    
+}
+html{
+    margin: 0px;
+    padding: 0px;
+    font-size: 62.5%;
+}
+
+
+/* ----------------------------------------------------------------------------------
+ this is for the navar
+---------------------------------------------------------------------------------- */
+.navbar{
+    background: #fc00ff;
+    background: linear-gradient(to right, #00dbde, #fc00ff);
+    font-family: barfont;
+    padding: 0px;
+}
+.navbar .linkBox
+{
+    margin: 0px ;
+    padding: 0px;
+}
+.navbar .allLinks{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+   
+}
+.navbar .nav-item a{
+  color: rgb(255, 255, 255);
+  font-size: 4.7rem;
+
+}
+.navbar .nav-item .active{
+ color: black;
+    
+  }
+.navbar .navbar-toggler img{ 
+    width: 3.8rem;
+    color: white;
+    font-size: 50px;    
+}    
+
+
+/* ----------------------------------------------------------------------------------
+this is for the color shades option
+---------------------------------------------------------------------------------- */
+
+#ColorShadeSec .colorShadeBox{
+    height: 400px;
+    margin-top: 70px;
+    height: auto;
+  
+  }
+  #ColorShadeSec .colorShadeBox .shade{
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+  }
+  #ColorShadeSec .colorShadeBox .shade .colorShadeItem{
+    width: 30%;
+    height: 5rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: all;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 3px;
+  }
+  #ColorShadeSec .colorShadeBox .shade .colorBox:hover{
+      transition: all .5s;
+      transform: scale(1.3);
+     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    
+  }
+  #ColorShadeSec .colorShadeBox .shade .codeBox{
+    border: solid 1.5px black;
+  }
+  
+
+
+/* ----------------------------------------------------------------------------------
+this is for the color shades optionthis is for the footer
+---------------------------------------------------------------------------------- */
+
+#Footer {
+    margin-top: 60px;
+}
+#Footer .footerBox{
+    width: 100%;
+    margin: 0px;
+    padding: 20px;
+    background:  linear-gradient(to right, #00dbde, #fc00ff); 
+    color: white;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#Footer .footerBox .text,#Footer .footerBox .links {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+}
+#Footer .footerBox .text h2{
+    font-size: 3rem;
+    font-weight: 700;
+}
+#Footer .footerBox .text p{
+    font-size: 1.4rem;
+    font-weight: 300;
+    font-style: italic;
+    text-align: justify;
+    letter-spacing: .5px;
+    word-spacing: 1.5px;
+   
+}
+
+#Footer .footerBox .links h2{
+    font-size: 3rem;
+    font-weight: 700;
+
+}
+#Footer .footerBox .links li {
+     font-size: 1.5rem;
+     list-style-type: none;
+     margin-left: -35px;
+     line-height: 25px;
+ }
+#Footer .footerBox .links li a{
+   color: white;
+}
+#Footer .footerBox .qr img{
+    width: 130px;
+}
+
+#Footer .footerBox .qr{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/*for end footer*/
+#CreditSec .credit{
+    padding: 5px;
+    background:  linear-gradient(to right, #00dbde, #fc00ff); 
+     color: white;
+     text-align: center;
+     font-size: 1rem;
+     font-weight:200;
+     border-top: solid 0.5px white;
+}
+
+
+
+/* ----------------------------------------------------------------------------------
+this is for the responsive 
+---------------------------------------------------------------------------------- */
+
+@media only screen and (max-width:1300px) {
+   
+    html{
+        font-size: 55%;
+    }
+    #Footer .footerBox .qr img{
+        width: 100px;
+    }
+    #colorPlateGit{
+        font-size: 17px;
+        
+    }
+}
+
+@media only screen and (max-width:1000px) {
+   /*this is common for all page*/
+   .navbar .nav-item a{
+    font-size: 4rem;
+    } 
+    #sampalColorYC .sampalContainer{
+        grid-template-columns: 30% 30% 30%; 
+        column-gap: 4%;
+    }
+    #sampalColorYC .sampalColorBox:hover{
+        transform: scale(1.5);
+     }
+    
+     #colorPlateGit{
+        font-size: 14px;
+        
+    }
+}
+
+
+
+@media only screen and (max-width:680px) {
+    html{
+        font-size: 45%;
+    }
+    #sampalColorYC .sampalContainer{
+        grid-template-columns: 45% 45%; 
+       column-gap: 5%;
+    }
+    #sampalColorYC .sampalColorBox:hover{
+       transform: scale(1.2);
+    }
+    #colorPlateGit{
+        font-size: 11px;
+        
+    }
+}
+@media only screen and (max-width:530px) {
+    html{
+        font-size: 40%;
+    }
+    #sampalColorYC .sampalContainer{
+        grid-template-columns: 90%; 
+       column-gap: 5%;
+    }
+    #sampalColorYC .sampalColorBox:hover{
+        transform: scale(1.1);
+    }
+    #colorPlateGit{
+        font-size: 9px;
+        
+    }
+
+}
+
+
+@media only screen and (max-width:400px) {
+  
+    #Footer .footerBox .qr img{
+        width: 80px;
+    }
+    #ColorCodeSecRC .colorCodes .colorCodeItem{
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width:350px) {
+    html{
+        font-size: 40%;
+    }
+   
+    #sampalColor .sampalContainer{
+        grid-template-columns: 90%; 
+    }
+    #colorPlateGit{
+        font-size: 7px;
+        
+    }
+}

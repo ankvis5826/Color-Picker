@@ -249,29 +249,24 @@ margin-top: 50px;
 
 @media only screen and (max-width:1000px) {
    
-    .navbar .nav-item a{
+     .navbar .nav-item a{
         
         font-size: 4rem;
       
       }
-    #ColorShadeSec .colorShadeBox .shade .codeBox{
-        font-size: 1.6rem;
-      }
       #sampalColorYC .sampalContainer{
         grid-template-columns: 30% 30% 30%; 
         column-gap: 4%;
-        
     
         }
 }
+
 @media only screen and (max-width:400px) {
   
    
     #sampalColorYC .sampalContainer{
         grid-template-columns: 45% 45%; 
       column-gap: 5%;
-        
-    
 
     }
     #ColorShadeSec .colorShadeBox .shade .codeBox{

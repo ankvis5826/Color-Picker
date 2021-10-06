@@ -208,30 +208,6 @@ html{
 }
 
 
-/*this is for color code section*/
-#ColorCodeSecMYC{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#ColorCodeSecMYC .colorCodes {
-    width: 80%;
-    padding: 10px;
-    background: linear-gradient(to left, #00dbde, #fc00ff);
-    border-radius:200px;
-   margin-top: -25px;
-}
-#ColorCodeSecMYC .colorCodes .colorCodeItem {
-   color: white;
-   font-family: 'Noto Sans KR', sans-serif;
-   font-size: 2.5rem;
-   text-align: center;
-   user-select: all;
-} 
-#ColorCodeSecMYC .colorCodes .colorCodeItem span:hover{
-    transition: all .5s;
-   font-weight: 700;
-}
 
 /*this is for the color shades option*/
 #ColorShadeSecMYC .colorShadeBox{
@@ -336,6 +312,8 @@ html{
 }
 
 
+
+
 /*this is for the responsiv code*/
 @media only screen and (max-width:1300px) {
    
@@ -358,8 +336,6 @@ html{
         font-size: 1.6rem;
       }
 }
-
-
 @media only screen and (max-width:400px) {
   
    
